@@ -43,6 +43,7 @@ window.onscroll = function () {
 
 $(document).ready(function () {
   myFunction();
+  console.log('ready')
 });
 
 function myFunction() {

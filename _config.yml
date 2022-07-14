@@ -7,7 +7,7 @@ plugins:
 url: "portfolio" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Jonas Goh" # the name of your site, e.g. ACME Corp.
-tagline: "Jonas Goh Portfolio"
+tagline: "Goh Wei Tai Jonas Portfolio"
 description: "Jonas Goh - Y2 NUS CS Student"
 logo: /favicon.png
 social:
