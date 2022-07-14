@@ -14,7 +14,7 @@
 
 [![Screen Shot][product-screenshot]](https://jonasgwt.github.io/)
 
-A mobile responsive website built with Jekyll that servers as a portfolio. 
+A mobile responsive website built with Jekyll that serves as a portfolio. Visit the site <a href="https://jonasgwt.github.io/">here</a>
 
 
 
