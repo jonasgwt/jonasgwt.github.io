@@ -60,4 +60,4 @@ A mobile responsive website built with Jekyll that servers as a portfolio.
 
 [javascript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 
-[product-screenshot]: https://playground.nhhs-sjb.org/uploaded/Screenshot%202022-07-14%20at%209.44.24%20PM.png
+[product-screenshot]: /screenshot.png
