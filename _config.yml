@@ -1,0 +1,17 @@
+# @format
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Jonas Goh" # the name of your site, e.g. ACME Corp.
+tagline: "Jonas Goh Portfolio"
+description: "Jonas Goh - Y2 NUS CS Student"
+logo: /favicon.png
+social:
+  name: Jonas Goh
+  links:
+    - https://www.linkedin.com/in/jonas-goh-891a15146/
+    - https://github.com/jonasgwt
