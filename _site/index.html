@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>Jonas Goh</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.png">
-    <meta name="google-site-verification" content="p1DOwOP-yz4qfLRPGSYZJGZGtiueVl6cJLyERLNTdgc" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/assets/css/timeline.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="/assets/js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/139f3629da.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/fonts/icomoon/style.css" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<html lang=" en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Jonas Goh</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+  <meta name="google-site-verification" content="p1DOwOP-yz4qfLRPGSYZJGZGtiueVl6cJLyERLNTdgc" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/assets/css/timeline.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="/assets/js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/139f3629da.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/fonts/icomoon/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Jonas Goh | Goh Wei Tai Jonas</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Jonas Goh" />
@@ -38,387 +39,389 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology.","headline":"Jonas Goh","name":"Jonas Goh","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jonasgwt.github.io//favicon.png"}},"sameAs":["https://www.linkedin.com/in/jonas-goh-891a15146/","https://github.com/jonasgwt"],"url":"https://jonasgwt.github.io//"}</script>
 <!-- End Jekyll SEO tag -->
 
-  </head>
-  <body>
-    <!-- Nav Bar-->
-    <nav>
-      <h5 style="margin-left: 2%; font-weight: 800; font-size: 1.75em">
-        jonasgwt
-      </h5>
-      <div class="nav-buttons-container">
-        <p class="nav-buttons selected-nav-button" id="about-button" onclick="location.href = '#welcome'">
+</head>
+
+<body>
+  <!-- Nav Bar-->
+  <nav>
+    <h5 style="margin-left: 2%; font-weight: 800; font-size: 1.75em">
+      jonasgwt
+    </h5>
+    <div class="nav-buttons-container">
+      <p class="nav-buttons selected-nav-button" id="about-button" onclick="location.href = '#welcome'">
+        About
+      </p>
+      <p class="nav-buttons" id="skills-button" onclick="location.href = '#skills'">
+        Skills
+      </p>
+      <p class="nav-buttons" id="projects-button" onclick="location.href = '#projects'">
+        Projects
+      </p>
+      <p class="nav-buttons" id="experience-button" onclick="location.href = '#experience'">
+        Experience
+      </p>
+    </div>
+    <div class="hamburger-container" onclick="openMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </div>
+    <div class="overlay" onclick="closemenu()" id="overlay"></div>
+    <div class="menu-div" id="menu">
+      <div class="menu-button-container">
+        <button type="button" class="btn btn-dark menu-button" onclick="location.href = '#welcome'"
+          id="about-button-mobile">
           About
-        </p>
-        <p class="nav-buttons" id="skills-button" onclick="location.href = '#skills'">
+        </button>
+        <button type="button" class="btn btn-outline-dark menu-button" onclick="location.href = '#skills'"
+          id="skills-button-mobile">
           Skills
-        </p>
-        <p class="nav-buttons" id="projects-button" onclick="location.href = '#projects'">
+        </button>
+        <button type="button" class="btn btn-outline-dark menu-button" onclick="location.href = '#projects'"
+          id="projects-button-mobile">
           Projects
-        </p>
-        <p class="nav-buttons" id="experience-button" onclick="location.href = '#experience'">
+        </button>
+        <button type="button" class="btn btn-outline-dark menu-button" onclick="location.href = '#experience'"
+          id="experience-button-mobile">
           Experience
-        </p>
+        </button>
       </div>
-      <div class="hamburger-container" onclick="openMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </nav>
+
+  <!-- Welcome Page -->
+  <div data-aos="fade-down" id="welcome" class="welcome-page">
+    <img class="profile-image" src="../assets/images/IMG_0162.png" />
+    <div class="text-container">
+      <h1 class="hello-text">Hello 👋 <br />I'm Jonas</h1>
+      <p class="aboutme-text">Year 2 Computer Science Student from National University Singapore (NUS).
+        I am interested in software engineering.</p>
+      <div class="button-container">
+        <button class="btn btn-dark github-button" style="margin-top: 4%"
+          onclick="location.href='https://github.com/jonasgwt'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor"
+            class="bi bi-github" viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+          <p style="font-size: 1.25em; margin: 0">Github</p>
+        </button>
+        <button class="btn btn-dark github-button linkedin-button" style="margin-top: 4%"
+          onclick="location.href='../assets/pdf/Resume_Jonas_Goh.pdf'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor"
+            class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+          </svg>
+          <p style="font-size: 1.25em; margin: 0">Resume</p>
+        </button>
       </div>
-      <div class="overlay" onclick="closemenu()" id="overlay"></div>
-      <div class="menu-div" id="menu">
-        <div class="menu-button-container">
-          <button type="button" class="btn btn-dark menu-button" onclick="location.href = '#welcome'"
-            id="about-button-mobile">
-            About
-          </button>
-          <button type="button" class="btn btn-outline-dark menu-button" onclick="location.href = '#skills'"
-            id="skills-button-mobile">
-            Skills
-          </button>
-          <button type="button" class="btn btn-outline-dark menu-button" onclick="location.href = '#projects'"
-            id="projects-button-mobile">
-            Projects
-          </button>
-          <button type="button" class="btn btn-outline-dark menu-button" onclick="location.href = '#experience'"
-            id="experience-button-mobile">
-            Experience
-          </button>
+    </div>
+  </div>
+
+  <!-- Skills Page -->
+  <div class="skills-page scroll-correct" id="skills">
+    <h1 data-aos="zoom-in" class="title-text">Skills</h1>
+    <!-- Languages -->
+    <div data-aos="zoom-in" class="languages-container">
+      <h4 style="margin-bottom: 3vh; font-size: 1.5rem">Languages</h4>
+      <div class="skills-container">
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-java skill-icon" style="color: #f89820"></i>
+          <p class="skills-name">Java</p>
         </div>
-      </div>
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-    </nav>
-    
-    <!-- Welcome Page -->
-    <div data-aos="fade-down" id="welcome" class="welcome-page">
-      <img class="profile-image" src="../assets/images/IMG_0162.png" />
-      <div class="text-container">
-        <h1 class="hello-text">Hello 👋 <br />I'm Jonas</h1>
-        <p class="aboutme-text">Year 2 Computer Science Student from NUS. 
-          I am interested in software engineering and I'm excited about pursuing a career in that field.</p>
-        <div class="button-container">
-          <button class="btn btn-dark github-button" style="margin-top: 4%"
-            onclick="location.href='https://github.com/jonasgwt'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor" class="bi bi-github"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-            <p style="font-size: 1.25em; margin: 0">Github</p>
-          </button>
-          <button class="btn btn-primary github-button linkedin-button" style="margin-top: 4%"
-            onclick="location.href='https://www.linkedin.com/in/jonas-goh-891a15146/'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor"
-              class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg>
-            <p style="font-size: 1.25em; margin: 0">LinkedIn</p>
-          </button>
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-js-square skill-icon" style="color: #f0db4f"></i>
+          <p class="skills-name">JS</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-python skill-icon" style="color: #fbcb24"></i>
+          <p class="skills-name">Python</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-html5 skill-icon" style="color: #ff5722"></i>
+          <p class="skills-name">HTML</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-css3-alt skill-icon" style="color: #2196f3"></i>
+          <p class="skills-name">CSS</p>
         </div>
       </div>
     </div>
-    
-    <!-- Skills Page -->
-    <div class="skills-page scroll-correct" id="skills">
-      <h1 data-aos="zoom-in" class="title-text">Skills</h1>
-      <!-- Languages -->
-      <div data-aos="zoom-in" class="languages-container">
-        <h4 style="margin-bottom: 3vh; font-size: 1.5rem">Languages</h4>
-        <div class="skills-container">
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-java skill-icon" style="color: #f89820"></i>
-            <p class="skills-name">Java</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-js-square skill-icon" style="color: #f0db4f"></i>
-            <p class="skills-name">JS</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-python skill-icon" style="color: #fbcb24"></i>
-            <p class="skills-name">Python</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-html5 skill-icon" style="color: #ff5722"></i>
-            <p class="skills-name">HTML</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-css3-alt skill-icon" style="color: #2196f3"></i>
-            <p class="skills-name">CSS</p>
-          </div>
+    <!-- Framrworks -->
+    <div data-aos="zoom-in" class="languages-container">
+      <h4 style="margin-bottom: 3vh; font-size: 1.5rem">
+        Frameworks & Tools
+      </h4>
+      <div class="skills-container">
+        <div data-aos="flip-left" class="skill-container">
+          <img class="skill-icon" src="../assets/images/django-icon-0.png" />
+          <p class="skills-name">Django</p>
         </div>
-      </div>
-      <!-- Framrworks -->
-      <div data-aos="zoom-in" class="languages-container">
-        <h4 style="margin-bottom: 3vh; font-size: 1.5rem">
-          Frameworks & Tools
-        </h4>
-        <div class="skills-container">
-          <div data-aos="flip-left" class="skill-container">
-            <img class="skill-icon" src="../assets/images/django-icon-0.png" />
-            <p class="skills-name">Django</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-react skill-icon" style="color: #61dbfb"></i>
-            <p class="skills-name">React</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <img class="skill-icon" src="../assets/images/expo_1.png" />
-            <p class="skills-name">Expo</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Apache_Feather_Logo.svg" />
-            <p class="skills-name">Apache</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <img class="skill-icon" src="../assets/images/jekyll.png" />
-            <p class="skills-name">Jekyll</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <i class="fa-brands fa-git-alt skill-icon" style="color: #f1502f"></i>
-            <p class="skills-name">Git</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container">
-            <img class="skill-icon" src="../assets/images/firebase.png" />
-            <p class="skills-name">Firebase</p>
-          </div>
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-react skill-icon" style="color: #61dbfb"></i>
+          <p class="skills-name">React</p>
         </div>
-      </div>
-      <!-- Others -->
-      <div data-aos="zoom-in" class="languages-container">
-        <h4 style="margin-bottom: 3vh; font-size: 1.5rem">Others</h4>
-        <div class="skills-container">
-          <div data-aos="flip-left" class="skill-container" style="width: 6rem">
-            <i class="fa-brands fa-figma skill-icon"></i>
-            <p class="skills-name">Figma</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container" style="width: 6rem">
-            <img class="skill-icon" src="../assets/images/ps_icon.png" />
-            <p class="skills-name">Photoshop</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container" style="width: 6rem">
-            <img class="skill-icon" src="../assets/images/premiere_icon.png" />
-            <p class="skills-name">Premiere</p>
-          </div>
-          <div data-aos="flip-left" class="skill-container" style="width: 6rem">
-            <img class="skill-icon" src="../assets/images/audition_icon.png" />
-            <p class="skills-name">Audition</p>
-          </div>
+        <div data-aos="flip-left" class="skill-container">
+          <img class="skill-icon" src="../assets/images/expo_1.png" />
+          <p class="skills-name">Expo</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Apache_Feather_Logo.svg" />
+          <p class="skills-name">Apache</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <img class="skill-icon" src="../assets/images/jekyll.png" />
+          <p class="skills-name">Jekyll</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <i class="fa-brands fa-git-alt skill-icon" style="color: #f1502f"></i>
+          <p class="skills-name">Git</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <img class="skill-icon" src="../assets/images/firebase.png" />
+          <p class="skills-name">Firebase</p>
         </div>
       </div>
     </div>
-    
-    <!-- Projects Page -->
-    <div class="projects-page scroll-correct" id="projects">
-      <h1 data-aos="zoom-in" class="title-text">Projects</h1>
-      <div class="projects-container">
-        <div data-aos="fade-right" class="project-container">
-          <img class="project-image" src="../assets/images/test.png" />
-          <div class="project-text">
-            <h2 style="font-weight: 700; font-size: 1.5rem">ChargeEV</h2>
-            <p style="font-size: 1rem">
-              ChargeEV is a mobile app aimed to provide EV users with additional
-              locations to charge their vehicles. This is achieved by allowing
-              users to rent out their EV chargers to other users for a small
-              fee. Watch the project video
-              <a href="https://drive.google.com/file/d/1eE9RgI8X7fwGMISPce4COpm_puPNXa49/view">here</a>
-            </p>
-            <hr />
-            <div style="
+    <!-- Others -->
+    <div data-aos="zoom-in" class="languages-container">
+      <h4 style="margin-bottom: 3vh; font-size: 1.5rem">Others</h4>
+      <div class="skills-container">
+        <div data-aos="flip-left" class="skill-container" style="width: 6rem">
+          <i class="fa-brands fa-figma skill-icon"></i>
+          <p class="skills-name">Figma</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container" style="width: 6rem">
+          <img class="skill-icon" src="../assets/images/ps_icon.png" />
+          <p class="skills-name">Photoshop</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container" style="width: 6rem">
+          <img class="skill-icon" src="../assets/images/premiere_icon.png" />
+          <p class="skills-name">Premiere</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container" style="width: 6rem">
+          <img class="skill-icon" src="../assets/images/audition_icon.png" />
+          <p class="skills-name">Audition</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Page -->
+  <div class="projects-page scroll-correct" id="projects">
+    <h1 data-aos="zoom-in" class="title-text">Projects</h1>
+    <div class="projects-container">
+      <div data-aos="zoom-in" class="project-container">
+        <img class="project-image" src="../assets/images/test.png" />
+        <div class="project-text">
+          <h2 style="font-weight: 700; font-size: 1.5rem">ChargeEV</h2>
+          <p style="font-size: 1rem">
+            ChargeEV is a mobile app aimed to provide EV users with additional
+            locations to charge their vehicles. This is achieved by allowing
+            users to rent out their EV chargers to other users for a small
+            fee. Watch the project video
+            <a href="https://drive.google.com/file/d/1eE9RgI8X7fwGMISPce4COpm_puPNXa49/view">here</a>
+          </p>
+          <hr />
+          <div style="
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                   ">
-              <div>
-                <i class="fa-brands fa-react fa-2xl" style="color: #61dbfb"></i>
-                <img class="skill-icon" src="../assets/images/expo_1.png" style="height: 2rem" />
-                <img class="skill-icon" src="../assets/images/firebase.png" style="height: 2rem" />
-                <i class="fa-brands fa-js-square fa-2xl" style="color: #f0db4f"></i>
-              </div>
-              <button class="btn btn-dark github-button" onclick="location.href='https://github.com/jonasgwt/ChargeEV'"
-                style="width: 7rem">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github"
-                  viewBox="0 0 16 16">
+            <div>
+              <i class="fa-brands fa-react fa-2xl" style="color: #61dbfb"></i>
+              <img class="skill-icon" src="../assets/images/expo_1.png" style="height: 2rem" />
+              <img class="skill-icon" src="../assets/images/firebase.png" style="height: 2rem" />
+              <i class="fa-brands fa-js-square fa-2xl" style="color: #f0db4f"></i>
+            </div>
+            <button class="btn btn-dark github-button" onclick="location.href='https://github.com/jonasgwt/ChargeEV'"
+              style="width: 7rem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <p style="font-size: 1em; margin: 0">Github</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="project-container">
+        <img class="project-image" src="../assets/images/IMS.png" />
+        <div class="project-text">
+          <h2 style="font-weight: 700; font-size: 1.5rem">Deck (IMS)</h2>
+          <p style="font-size: 1rem">
+            Inventory Management System (IMS) is a web app that automates the
+            tracking of first aid stocks, and facilitates loaning and
+            returning of items. Built with Django and deployed with Apache
+            Hadoop on Ubuntu Server 20.04.
+          </p>
+          <hr />
+          <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  ">
+            <div>
+              <i class="fa-brands fa-python fa-2xl" style="color: #fbcb24"></i>
+              <img class="skill-icon" style="height: 2rem" src="../assets/images/django-icon-0.png" />
+            </div>
+            <div style="display: flex">
+              <button class="btn btn-dark github-button" onclick="location.href='https://github.com/jonasgwt/inventory'"
+                style="width: 7rem; margin-right: 2%">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                  class="bi bi-github" viewBox="0 0 16 16">
                   <path
                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                 </svg>
                 <p style="font-size: 1em; margin: 0">Github</p>
               </button>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left" class="project-container">
-          <img class="project-image" src="../assets/images/IMS.png" />
-          <div class="project-text">
-            <h2 style="font-weight: 700; font-size: 1.5rem">Deck (IMS)</h2>
-            <p style="font-size: 1rem">
-              Inventory Management System (IMS) is a web app that automates the
-              tracking of first aid stocks, and facilitates loaning and
-              returning of items. Built with Django and deployed with Apache
-              Hadoop on Ubuntu Server 20.04.
-            </p>
-            <hr />
-            <div style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                  ">
-              <div>
-                <i class="fa-brands fa-python fa-2xl" style="color: #fbcb24"></i>
-                <img class="skill-icon" style="height: 2rem" src="../assets/images/django-icon-0.png" />
-              </div>
-              <div style="display: flex">
-                <button class="btn btn-dark github-button" onclick="location.href='https://github.com/jonasgwt/inventory'"
-                  style="width: 7rem; margin-right: 2%">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>
-                  <p style="font-size: 1em; margin: 0">Github</p>
-                </button>
-                <button class="btn btn-dark github-button" onclick="location.href='https://deck.nhhs-sjb.org/'"
-                  style="width: 6rem">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
-                    <path fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
-                  </svg>
-                  <p style="font-size: 1em; margin: 0">Site</p>
-                </button>
-              </div>
+              <button class="btn btn-dark github-button" onclick="location.href='https://deck.nhhs-sjb.org/'"
+                style="width: 6rem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                  class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                  <path fill-rule="evenodd"
+                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                </svg>
+                <p style="font-size: 1em; margin: 0">Site</p>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- Experience -->
-    <div class="experience-page scroll-correct" id="experience">
-      <h1 data-aos="zoom-in" class="title-text">Experience</h1>
-      <ul class="timeline">
-        <li data-aos="fade-down" class="timeline-event">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Aug 2021 - Present</p>
-            <h3>National University Singapore</h3>
-            <h4>Major in Computer Science</h4>
-            <p>
-              <strong>Current CAP: 10.0</strong><br />
-              Relevant Coursework: Programming Methadology I, Programming
-              Methadology II, Data Structures & Algorithms, Discrete Structures
-            </p>
+  </div>
+
+  <!-- Experience -->
+  <div class="experience-page scroll-correct" id="experience">
+    <h1 data-aos="zoom-in" class="title-text">Experience</h1>
+    <ul class="timeline">
+      <li data-aos="fade-down" class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">Aug 2021 - Present</p>
+          <h3>National University Singapore</h3>
+          <h4>Major in Computer Science</h4>
+          <p>
+            <strong>Current CAP: 10.0</strong><br />
+            Relevant Coursework: Programming Methadology I, Programming
+            Methadology II, Data Structures & Algorithms, Discrete Structures
+          </p>
+        </div>
+      </li>
+      <li data-aos="fade-down" class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">Apr 2021 - Jun 2021</p>
+          <h3>Craft Creative</h3>
+          <h4>Digital Marketing Intern</h4>
+          <p>
+            Tasked with creating ads using Google AdWords to increase product
+            visibility and promotion for ORVIBO, a smart home device manufacturer that is based in
+            China. Developed social media outreach materials using Adobe
+            Photoshop and published them on Facebook and Instagram.
+          </p>
+          <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
+            onclick="location.href='https://craft.com.sg/my-3-months-internship-experience/'">
+            View More
+          </button>
+        </div>
+      </li>
+      <li data-aos="fade-down" class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">Apr 2019 - Apr 2021</p>
+          <h3>Singapore Armed Forces</h3>
+          <h4>Intelligence Research</h4>
+          <p>
+            Responsible for interpreting and analysing intelligence for
+            SAF. Worked with softwares such as ArcGIS and Erdas Imagine.
+            Received Letter of Commendation for my outstanding performance
+          </p>
+          <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
+            onclick="location.href='../assets/pdf/transcript.pdf'">
+            View Transcript
+          </button>
+          <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
+            onclick="location.href='../assets/pdf/testimonial.pdf'">
+            View Testimonial
+          </button>
+        </div>
+      </li>
+      <li data-aos="fade-down" class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">Feb 2017 - Nov 2018</p>
+          <h3>Nanyang Junior College</h3>
+          <h4>A Levels</h4>
+          <p>
+            <strong>Physics, Chemistry, Math, Economics</strong><br />
+            Activities and Societies: Chief Photographer at Nanyang
+            Photographic Society<br />
+            Awards: Merit in Schools Digital Media Award 2017, CCA Awards Team
+            & Individual
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-16371">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 text-center">
+          <div data-aos="fade-down" class="footer-site-logo mb-4">
+            jonasgwt
           </div>
-        </li>
-        <li data-aos="fade-down" class="timeline-event">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Apr 2021 - Jun 2021</p>
-            <h3>Craft Creative</h3>
-            <h4>Digital Marketing Intern</h4>
-            <p>
-              Tasked with creating ads using Google AdWords to increase product
-              visibility for ORVIBO, a smart home device manufacturer based in
-              China. Developed social media outreach materials using Adobe
-              Photoshop and published on Facebook and Instagram.
-            </p>
-            <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
-              onclick="location.href='https://craft.com.sg/my-3-months-internship-experience/'">
-              View More
-            </button>
-          </div>
-        </li>
-        <li data-aos="fade-down" class="timeline-event">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Apr 2019 - Apr 2021</p>
-            <h3>Singapore Armed Forces</h3>
-            <h4>Intelligence Research</h4>
-            <p>
-              Responsible for the interpreting and analysis of intelligence for
-              SAF. Worked with softwares such as ArcGIS and Erdas Imagine.
-              Received Letter of Commendation for outstanding performance
-            </p>
-            <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
-              onclick="location.href='../assets/pdf/transcript.pdf'">
-              View Transcript
-            </button>
-            <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
-              onclick="location.href='../assets/pdf/testimonial.pdf'">
-              View Testimonial
-            </button>
-          </div>
-        </li>
-        <li data-aos="fade-down" class="timeline-event">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Feb 2017 - Nov 2018</p>
-            <h3>Nanyang Junior College</h3>
-            <h4>A Levels</h4>
-            <p>
-              <strong>Physics, Chemistry, Math, Economics</strong><br />
-              Activities and Societies: Chief Photographer at Nanyang
-              Photographic Society<br />
-              Awards: Merit in Schools Digital Media Award 2017, CCA Awards Team
-              & Individual
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    
-    <!-- Footer -->
-    <footer class="footer-16371">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-9 text-center">
-            <div data-aos="fade-down" class="footer-site-logo mb-4">
-              jonasgwt
-            </div>
-            <ul class="list-unstyled nav-links mb-5">
-              <li data-aos="fade-right"><a href="#welcome">About</a></li>
-              <li data-aos="fade-right"><a href="#skills">Skills</a></li>
-              <li data-aos="fade-left"><a href="#projects">Projects</a></li>
-              <li data-aos="fade-left"><a href="#experience">Experience</a></li>
+          <ul class="list-unstyled nav-links mb-5">
+            <li data-aos="zoom-in"><a href="#welcome">About</a></li>
+            <li data-aos="zoom-in"><a href="#skills">Skills</a></li>
+            <li data-aos="zoom-in"><a href="#projects">Projects</a></li>
+            <li data-aos="zoom-in"><a href="#experience">Experience</a></li>
+          </ul>
+
+          <div class="social mb-4">
+            <h3 data-aos="fade-down">Stay in touch</h3>
+            <ul class="list-unstyled">
+              <li class="git" data-aos="zoom-in">
+                <a href="https://github.com/jonasgwt"><span class="icon-github"></span></a>
+              </li>
+              <li class="in" data-aos="zoom-in">
+                <a href="https://www.linkedin.com/in/jonas-goh-891a15146/"><span class="icon-linkedin"></span></a>
+              </li>
+              <li class="email" data-aos="zoom-in">
+                <a href="mailto:jongoh2000@gmail.com"><span class="icon-envelope-o"></span></a>
+              </li>
+              <li class="tele" data-aos="zoom-in">
+                <a href="https://t.me/jonasgwt"><span class="icon-telegram"></span></a>
+              </li>
             </ul>
-    
-            <div class="social mb-4">
-              <h3 data-aos="fade-down">Stay in touch</h3>
-              <ul class="list-unstyled">
-                <li class="git" data-aos="fade-right">
-                  <a href="https://github.com/jonasgwt"><span class="icon-github"></span></a>
-                </li>
-                <li class="in" data-aos="fade-right">
-                  <a href="https://www.linkedin.com/in/jonas-goh-891a15146/"><span class="icon-linkedin"></span></a>
-                </li>
-                <li class="email" data-aos="fade-left">
-                  <a href="mailto:jongoh2000@gmail.com"><span class="icon-envelope-o"></span></a>
-                </li>
-                <li class="tele" data-aos="fade-left">
-                  <a href="https://t.me/jonasgwt"><span class="icon-telegram"></span></a>
-                </li>
-              </ul>
-            </div>
-    
-            <div class="copyright">
-              <p class="mb-0" data-aos="fade-up">
-                <small>Updated as of 13 July 2022</small>
-              </p>
-            </div>
+          </div>
+
+          <div class="copyright">
+            <p class="mb-0" data-aos="fade-up">
+              <small>Updated as of 13 July 2022</small>
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    
-    <!--AOS-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+    </div>
+  </footer>
+
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

@@ -109,11 +109,6 @@ nav {
 
 .linkedin-button {
   margin-left: 5%;
-  --bs-btn-hover-bg: #0072b1;
-  --bs-btn-active-bg: #0072b1;
-  --bs-btn-active-border-color: #0072b1;
-  --bs-btn-bg: #0072b1;
-  --bs-btn-border-color: #0072b1;
 }
 
 .hamburger-container {
