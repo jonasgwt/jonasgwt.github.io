@@ -2,7 +2,7 @@
 <html lang=" en-US">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8" />
   <title>Jonas Goh</title>
   <link rel="icon" type="image/x-icon" href="../favicon.png">
@@ -103,7 +103,7 @@
         I am interested in software engineering.</p>
       <div class="button-container">
         <button class="btn btn-dark github-button" style="margin-top: 4%"
-          onclick="location.href='https://github.com/jonasgwt'">
+          onclick="window.open('https://github.com/jonasgwt', '_blank');">
           <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor"
             class="bi bi-github" viewBox="0 0 16 16">
             <path
@@ -112,7 +112,7 @@
           <p style="font-size: 1.25em; margin: 0">Github</p>
         </button>
         <button class="btn btn-dark github-button linkedin-button" style="margin-top: 4%"
-          onclick="location.href='../assets/pdf/Resume_Jonas_Goh.pdf'">
+          onclick="window.open('../assets/pdf/Resume_Redacted.pdf', '_blank');">
           <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" fill="currentColor"
             class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
             <path
@@ -150,6 +150,10 @@
         <div data-aos="flip-left" class="skill-container">
           <i class="fa-brands fa-css3-alt skill-icon" style="color: #2196f3"></i>
           <p class="skills-name">CSS</p>
+        </div>
+        <div data-aos="flip-left" class="skill-container">
+          <img class="skill-icon" src="../assets/images/C.png" />
+          <p class="skills-name">C</p>
         </div>
       </div>
     </div>
@@ -225,11 +229,10 @@
             ChargeEV is a mobile app aimed to provide EV users with additional
             locations to charge their vehicles. This is achieved by allowing
             users to rent out their EV chargers to other users for a small
-            fee. Watch the project video
-            <a href="https://drive.google.com/file/d/1eE9RgI8X7fwGMISPce4COpm_puPNXa49/view">here</a>
+            fee.
           </p>
           <div style="display: flex;">
-          <button class="btn btn-dark github-button" onclick="location.href='https://drive.google.com/file/d/15IoMpuw_LE40LSMfbkVvX-5mrZaeaUZj/view?usp=sharing'"
+          <button class="btn btn-dark github-button" onclick="window.open('https://drive.google.com/file/d/15IoMpuw_LE40LSMfbkVvX-5mrZaeaUZj/view?usp=sharing', '_blank');"
             style="width: 7rem; margin-right: 2%;">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-play-btn-fill"
               viewBox="0 0 16 16">
@@ -238,7 +241,7 @@
             </svg>
             <p style="font-size: 1em; margin: 0">Video</p>
           </button>
-          <button class="btn btn-dark github-button" onclick="location.href='https://jonasgwt.github.io/ChargeEV/'"
+          <button class="btn btn-dark github-button" onclick="window.open('https://jonasgwt.github.io/ChargeEV/', '_blank');"
             style="width: 7rem">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-file-code-fill"
               viewBox="0 0 16 16">
@@ -260,7 +263,7 @@
               <img class="skill-icon" src="../assets/images/firebase.png" style="height: 2rem" />
               <i class="fa-brands fa-js-square fa-2xl" style="color: #f0db4f"></i>
             </div>
-            <button class="btn btn-dark github-button" onclick="location.href='https://github.com/jonasgwt/ChargeEV'"
+            <button class="btn btn-dark github-button" onclick="window.open('https://github.com/jonasgwt/ChargeEV', '_blank');"
               style="width: 7rem">
               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github"
                 viewBox="0 0 16 16">
@@ -283,7 +286,7 @@
             Hadoop on Ubuntu Server 20.04.
           </p>
           <div style="display: flex;">
-          <button class="btn btn-dark github-button" onclick="location.href='https://deck.nhhs-sjb.org/'" style="width: 6rem">
+          <button class="btn btn-dark github-button" onclick="window.open('https://deck.nhhs-sjb.org/', '_blank');" style="width: 6rem">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-box-arrow-up-right"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
@@ -305,7 +308,7 @@
               <img class="skill-icon" style="height: 2rem" src="../assets/images/django-icon-0.png" />
             </div>
             <div style="display: flex">
-              <button class="btn btn-dark github-button" onclick="location.href='https://github.com/jonasgwt/inventory'"
+              <button class="btn btn-dark github-button" onclick="window.open('https://github.com/jonasgwt/inventory', '_blank');"
                 style="width: 7rem; margin-right: 2%">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
                   class="bi bi-github" viewBox="0 0 16 16">
@@ -332,7 +335,6 @@
           <h3>National University Singapore</h3>
           <h4>Major in Computer Science</h4>
           <p>
-            <strong>Current CAP: 10.0</strong><br />
             Relevant Coursework: Programming Methadology I, Programming
             Methadology II, Data Structures & Algorithms, Discrete Structures
           </p>
@@ -350,8 +352,9 @@
             China. Developed social media outreach materials using Adobe
             Photoshop and published them on Facebook and Instagram.
           </p>
+          
           <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
-            onclick="location.href='https://craft.com.sg/my-3-months-internship-experience/'">
+            onclick="window.open('https://craft.com.sg/my-3-months-internship-experience/', '_blank');">
             View More
           </button>
         </div>
@@ -368,11 +371,11 @@
             Received Letter of Commendation for my outstanding performance
           </p>
           <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
-            onclick="location.href='../assets/pdf/transcript.pdf'">
+            onclick="window.open('../assets/pdf/transcript.pdf', '_blank');">
             View Transcript
           </button>
           <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
-            onclick="location.href='../assets/pdf/testimonial.pdf'">
+            onclick="window.open('../assets/pdf/testimonial.pdf', '_blank');">
             View Testimonial
           </button>
         </div>
@@ -421,9 +424,6 @@
               </li>
               <li class="email" data-aos="zoom-in">
                 <a href="mailto:jongoh2000@gmail.com"><span class="icon-envelope-o"></span></a>
-              </li>
-              <li class="tele" data-aos="zoom-in">
-                <a href="https://t.me/jonasgwt"><span class="icon-telegram"></span></a>
               </li>
             </ul>
           </div>
