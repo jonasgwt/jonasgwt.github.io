@@ -22,6 +22,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Jonas Goh | Goh Wei Tai Jonas</title>
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -29,14 +30,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology." />
 <meta property="og:description" content="Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="http://0.0.0.0:4000/" />
+<meta property="og:url" content="http://0.0.0.0:4000/" />
 <meta property="og:site_name" content="Jonas Goh" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Jonas Goh" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology.","headline":"Jonas Goh","name":"Jonas Goh","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/favicon.png"}},"sameAs":["https://www.linkedin.com/in/jonas-goh-891a15146/","https://github.com/jonasgwt"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology.","headline":"Jonas Goh","name":"Jonas Goh","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/favicon.png"}},"sameAs":["https://www.linkedin.com/in/jonas-goh-891a15146/","https://github.com/jonasgwt"],"url":"http://0.0.0.0:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -55,6 +56,90 @@
     const loadingScreen = document.getElementById("loading-screen");
     loadingScreen.style.display = "none";
   });
+</script>
+<!-- Experience Selector Script-->
+<script>
+  function educationSelector(e) {
+    $(e).animate({
+      borderWidth: "1px"
+    }, 75, "swing", () => {
+      $(".experience-container").animate({
+        borderWidth: "0px"
+      }, 75, "swing")
+      $(".awards-container").animate({
+        borderWidth: "0px"
+      }, 75, "swing")
+    })
+
+    $("#awards-timeline").animate({
+      opacity: 0
+    }, 75, "swing")
+    $("#experience-timeline").animate({
+      opacity: 0
+    }, 75, "swing", () => {
+      document.querySelector('#experience-timeline').style.display = "none"
+      document.querySelector('#awards-timeline').style.display = "none"
+      document.querySelector('#education-timeline').style.display = "block"
+      $("#education-timeline").animate({
+        opacity: 1
+      }, 75, "swing")
+    })
+  }
+
+  function experienceSelector(e) {
+    $(e).animate({
+      borderWidth: "1px"
+    }, 75, "swing", () => {
+      $(".education-container").animate({
+        borderWidth: "0px"
+      }, 75, "swing")
+      $(".awards-container").animate({
+        borderWidth: "0px"
+      }, 75, "swing")
+    })
+
+    $("#awards-timeline").animate({
+      opacity: 0
+    }, 75, "swing")
+    $("#education-timeline").animate({
+      opacity: 0
+    }, 75, "swing", () => {
+      document.querySelector('#education-timeline').style.display = "none"
+      document.querySelector('#awards-timeline').style.display = "none"
+      document.querySelector('#experience-timeline').style.display = "block"
+      $("#experience-timeline").animate({
+        opacity: 1
+      }, 75, "swing")
+    })
+  }
+
+  function awardsSelector(e) {
+    $(e).animate({
+      borderWidth: "1px"
+    }, 75, "swing", () => {
+      $(".education-container").animate({
+        borderWidth: "0px"
+      }, 75, "swing")
+      $(".experience-container").animate({
+        borderWidth: "0px"
+      }, 75, "swing")
+    })
+
+    $("#experience-timeline").animate({
+      opacity: 0
+    }, 75, "swing")
+    $("#education-timeline").animate({
+      opacity: 0
+    }, 75, "swing", () => {
+      document.querySelector('#education-timeline').style.display = "none"
+      document.querySelector('#awards-timeline').style.display = "block"
+      document.querySelector('#experience-timeline').style.display = "none"
+      $("#awards-timeline").animate({
+        opacity: 1
+      }, 75, "swing")
+    })
+  }
+
 </script>
 
 <body>
@@ -245,6 +330,76 @@
   <div class="projects-page scroll-correct" id="projects">
     <h1 data-aos="zoom-in" class="title-text">Projects</h1>
     <div class="projects-container">
+
+      <div data-aos="zoom-in" class="project-container">
+        <img class="project-image" src="../assets/images/MassLinkers.webp" />
+        <div class="project-text">
+          <h2 style="font-weight: 700; font-size: 1.5rem">MassLinkers</h2>
+          <p style="font-size: 1rem">
+            Mass Linkers is a desktop application for managing your Computer Science batchmates’ 
+            contact details and module information. While it has a GUI, most of the user interactions 
+            happen using a CLI.
+          </p>
+          <div style="display: flex;">
+            <button class="btn btn-dark github-button"
+              onclick="window.open('https://ay2223s1-cs2103t-t11-4.github.io/tp/', '_blank');" style="width: 7rem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                class="bi bi-file-code-fill" viewBox="0 0 16 16">
+                <path
+                  d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z" />
+              </svg>
+              <p style="font-size: 1em; margin: 0">Docs</p>
+            </button>
+          </div>
+          <hr />
+          <div style="display: flex; justify-content: space-between;align-items: center;">
+            <div>
+              <i class="fa-brands fa-java fa-2xl" style="color: #f89820"></i>
+            </div>
+            <button class="btn btn-dark github-button"
+              onclick="window.open('https://github.com/AY2223S1-CS2103T-T11-4/tp', '_blank');" style="width: 7rem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <p style="font-size: 1em; margin: 0">Github</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="zoom-in" class="project-container">
+        <img class="project-image" src="../assets/images/portfolio.webp" />
+        <div class="project-text">
+          <h2 style="font-weight: 700; font-size: 1.5rem">Portfolio</h2>
+          <p style="font-size: 1rem">
+            It's what you are vieweing now! A website to compile and showcase my projects and journey.
+            Made with Jekyll, HTML and CSS, hosted with GitHub Pages.
+          </p>
+          <div style="display: flex; height: 38px;">
+            <!-- PlaceHolder -->
+          </div>
+          <hr />
+          <div style="display: flex;justify-content: space-between;align-items: center;">
+            <div>
+              <i class="fa-brands fa-html5 fa-2xl" style="color: #ff5722"></i>
+              <i class="fa-brands fa-css3-alt fa-2xl" style="color: #2196f3"></i>
+              <img class="skill-icon" style="height: 2rem" src="../assets/images/jekyll.webp" />
+            </div>
+            <button class="btn btn-dark github-button"
+              onclick="window.open('https://github.com/jonasgwt/jonasgwt.github.io', '_blank');" style="width: 7rem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <p style="font-size: 1em; margin: 0">Github</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div data-aos="zoom-in" class="project-container">
         <img class="project-image" src="../assets/images/chargeev.webp" />
         <div class="project-text">
@@ -299,6 +454,7 @@
           </div>
         </div>
       </div>
+
       <div data-aos="zoom-in" class="project-container">
         <img class="project-image" src="../assets/images/IMS.webp" />
         <div class="project-text">
@@ -307,7 +463,6 @@
             Inventory Management System (IMS) is a web app that automates the
             tracking of first aid stocks, and facilitates loaning and
             returning of items. Built with Django and deployed with Apache
-            Hadoop on Ubuntu Server 20.04.
           </p>
           <div style="display: flex;">
           <button class="btn btn-dark github-button" onclick="window.open('https://deck.nhhs-sjb.org/', '_blank');" style="width: 6rem">
@@ -351,7 +506,35 @@
   <!-- Experience -->
   <div class="experience-page scroll-correct" id="experience">
     <h1 data-aos="zoom-in" class="title-text">Experience</h1>
-    <ul class="timeline">
+    <div class="switch-container">
+      <span class="education-container" onclick="educationSelector(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book"
+        viewBox="0 0 16 16">
+        <path
+          d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+        </svg>
+        <p class="switch-text">Education</p>
+      </span>
+      <span class="experience-container" onclick="experienceSelector(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-briefcase"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+        </svg>
+        <p class="switch-text">Experience</p>
+      </span>
+      <span class="awards-container" onclick="awardsSelector(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-award"
+          viewBox="0 0 16 16">
+          <path
+            d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+          <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+        </svg>
+        <p class="switch-text">Awards</p>
+      </span>
+    </div>
+    <!-- Education Timeline -->
+    <ul class="timeline" id="education-timeline">
       <li data-aos="fade-down" class="timeline-event">
         <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
@@ -367,16 +550,34 @@
       <li data-aos="fade-down" class="timeline-event">
         <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">Feb 2017 - Nov 2018</p>
+          <h3>Nanyang Junior College</h3>
+          <h4>A Levels</h4>
+          <p>
+            <strong>Physics, Chemistry, Math, Economics</strong><br />
+            Activities and Societies: Chief Photographer at Nanyang
+            Photographic Society<br />
+            Awards: Merit in Schools Digital Media Award 2017, CCA Awards Team
+            & Individual
+          </p>
+        </div>
+      </li>
+    </ul>
+    <!-- Experience Timeline-->
+    <ul class="timeline" id="experience-timeline" style="display: none;">
+      <li data-aos="fade-down" class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">Apr 2021 - Jun 2021</p>
           <h3>Craft Creative</h3>
           <h4>Digital Marketing Intern</h4>
-          <p>
-            Tasked with creating ads using Google AdWords to increase product
-            visibility and promotion for ORVIBO, a smart home device manufacturer that is based in
-            China. Developed social media outreach materials using Adobe
-            Photoshop and published them on Facebook and Instagram.
-          </p>
-          
+          <ul style="margin-bottom: 5%;">
+            <li>Tasked with creating ads using Google AdWords to increase product
+            visibility and promotion for ORVIBO, a smart home device manufacturer</li>
+            <li>Developed social media outreach materials using Adobe
+            Photoshop and published them on Facebook and Instagram.</li>
+          </ul>
+      
           <button type="button" class="btn btn-outline-dark" style="margin-top: 1vh"
             onclick="window.open('https://craft.com.sg/my-3-months-internship-experience/', '_blank');">
             View More
@@ -404,18 +605,19 @@
           </button>
         </div>
       </li>
+    </ul>
+    <!-- Awards Timeline-->
+    <ul class="timeline" id="awards-timeline" style="display: none;">
       <li data-aos="fade-down" class="timeline-event">
         <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">Feb 2017 - Nov 2018</p>
-          <h3>Nanyang Junior College</h3>
-          <h4>A Levels</h4>
+          <p class="timeline-event-thumbnail">9 - 10 December 2022</p>
+          <h3>NTU SPIRITCYBER-22 Hackathon</h3>
+          <h4>Highest Score on Day 1</h4>
           <p>
-            <strong>Physics, Chemistry, Math, Economics</strong><br />
-            Activities and Societies: Chief Photographer at Nanyang
-            Photographic Society<br />
-            Awards: Merit in Schools Digital Media Award 2017, CCA Awards Team
-            & Individual
+            Won the special prize for the highest score on Day 1.
+            SPIRITCYBER-22 is a hackathon organised by NUS in conjuction
+            with CSA Singapore.
           </p>
         </div>
       </li>
@@ -427,34 +629,34 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-9 text-center">
-          <div data-aos="fade-down" class="footer-site-logo mb-4">
+          <div class="footer-site-logo mb-4">
             jonasgwt
           </div>
           <ul class="list-unstyled nav-links mb-5">
-            <li data-aos="zoom-in"><a href="#welcome">About</a></li>
-            <li data-aos="zoom-in"><a href="#skills">Skills</a></li>
-            <li data-aos="zoom-in"><a href="#projects">Projects</a></li>
-            <li data-aos="zoom-in"><a href="#experience">Experience</a></li>
+            <li><a href="#welcome">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
           </ul>
 
           <div class="social mb-4">
-            <h3 data-aos="fade-down">Stay in touch</h3>
+            <h3>Stay in touch</h3>
             <ul class="list-unstyled">
-              <li class="git" data-aos="zoom-in">
+              <li class="git">
                 <a href="https://github.com/jonasgwt"><span class="icon-github"></span></a>
               </li>
-              <li class="in" data-aos="zoom-in">
-                <a href="https://www.linkedin.com/in/jonas-goh-891a15146/"><span class="icon-linkedin"></span></a>
+              <li class="in">
+                <a href="https://www.linkedin.com/in/jonasgwt/"><span class="icon-linkedin"></span></a>
               </li>
-              <li class="email" data-aos="zoom-in">
+              <li class="email">
                 <a href="mailto:jongoh2000@gmail.com"><span class="icon-envelope-o"></span></a>
               </li>
             </ul>
           </div>
 
           <div class="copyright">
-            <p class="mb-0" data-aos="fade-up">
-              <small>Updated Sep 2022</small>
+            <p class="mb-0">
+              <small>Updated Dec 2022</small>
             </p>
           </div>
         </div>
