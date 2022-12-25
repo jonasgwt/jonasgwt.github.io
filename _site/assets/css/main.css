@@ -9,6 +9,7 @@ body {
   color: #121212;
   font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -440,4 +441,33 @@ a:hover {
 
 .footer-16371 .copyright {
   color: #999999;
+}
+
+/* Add a fixed position and fullscreen style to the loading screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+}
+
+/* Add a loading spinner or message to the loading screen */
+#loading-screen .loading-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-text{
+  margin-bottom: 0px;
+  margin-top: 10%;
+  font-size: 1.5em;
 }
