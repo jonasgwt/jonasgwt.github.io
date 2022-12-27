@@ -90,3 +90,89 @@ function myFunction() {
     currentSection = "welcome";
   }
 }
+
+function educationSelector(e) {
+  $(e).animate({
+    borderWidth: "1px"
+  }, 75, "swing", () => {
+    $(".experience-container").animate({
+      borderWidth: "0px"
+    }, 75, "swing")
+    $(".awards-container").animate({
+      borderWidth: "0px"
+    }, 75, "swing")
+  })
+
+  $("#awards-timeline").animate({
+    opacity: 0
+  }, 75, "swing")
+  $("#experience-timeline").animate({
+    opacity: 0
+  }, 75, "swing", () => {
+    document.querySelector('#experience-timeline').style.display = "none"
+    document.querySelector('#awards-timeline').style.display = "none"
+    document.querySelector('#education-timeline').style.display = "block"
+    $("#education-timeline").animate({
+      opacity: 1
+    }, 75, "swing")
+  })
+}
+
+function experienceSelector(e) {
+  $(e).animate({
+    borderWidth: "1px"
+  }, 75, "swing", () => {
+    $(".education-container").animate({
+      borderWidth: "0px"
+    }, 75, "swing")
+    $(".awards-container").animate({
+      borderWidth: "0px"
+    }, 75, "swing")
+  })
+
+  $("#awards-timeline").animate({
+    opacity: 0
+  }, 75, "swing")
+  $("#education-timeline").animate({
+    opacity: 0
+  }, 75, "swing", () => {
+    document.querySelector('#education-timeline').style.display = "none"
+    document.querySelector('#awards-timeline').style.display = "none"
+    document.querySelector('#experience-timeline').style.display = "block"
+    $("#experience-timeline").animate({
+      opacity: 1
+    }, 75, "swing")
+  })
+}
+
+function awardsSelector(e) {
+  $(e).animate({
+    borderWidth: "1px"
+  }, 75, "swing", () => {
+    $(".education-container").animate({
+      borderWidth: "0px"
+    }, 75, "swing")
+    $(".experience-container").animate({
+      borderWidth: "0px"
+    }, 75, "swing")
+  })
+
+  $("#experience-timeline").animate({
+    opacity: 0
+  }, 75, "swing")
+  $("#education-timeline").animate({
+    opacity: 0
+  }, 75, "swing", () => {
+    document.querySelector('#education-timeline').style.display = "none"
+    document.querySelector('#awards-timeline').style.display = "block"
+    document.querySelector('#experience-timeline').style.display = "none"
+    $("#awards-timeline").animate({
+      opacity: 1
+    }, 75, "swing")
+  })
+}
+
+window.addEventListener("load", function () {
+  const loadingScreen = document.getElementById("loading-screen");
+  loadingScreen.style.display = "none";
+});

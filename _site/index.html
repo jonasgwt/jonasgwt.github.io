@@ -37,7 +37,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Jonas Goh" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology.","headline":"Jonas Goh","name":"Jonas Goh","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/favicon.png"}},"sameAs":["https://www.linkedin.com/in/jonas-goh-891a15146/","https://github.com/jonasgwt"],"url":"http://0.0.0.0:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Hello, I’m Goh Wei Tai Jonas, a Y2 NUS CS student. I am interested in software engineering and I’m excited about pursuing a career in that field. During my free time, I enjoy working on side projects and making use of the skills I learned to create an impact. I am excited about learning new skills and frameworks that can help me better myself and keep up with the progress of technology.","headline":"Jonas Goh","name":"Jonas Goh","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/favicon.png"}},"sameAs":["https://www.linkedin.com/in/jonasgwt/","https://github.com/jonasgwt"],"url":"http://0.0.0.0:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -50,97 +50,7 @@
 
   gtag('config', 'G-DPB7M4F3HR');
 </script>
-<!-- Loading Script -->
-<script>
-  window.addEventListener("load", function () {
-    const loadingScreen = document.getElementById("loading-screen");
-    loadingScreen.style.display = "none";
-  });
-</script>
-<!-- Experience Selector Script-->
-<script>
-  function educationSelector(e) {
-    $(e).animate({
-      borderWidth: "1px"
-    }, 75, "swing", () => {
-      $(".experience-container").animate({
-        borderWidth: "0px"
-      }, 75, "swing")
-      $(".awards-container").animate({
-        borderWidth: "0px"
-      }, 75, "swing")
-    })
 
-    $("#awards-timeline").animate({
-      opacity: 0
-    }, 75, "swing")
-    $("#experience-timeline").animate({
-      opacity: 0
-    }, 75, "swing", () => {
-      document.querySelector('#experience-timeline').style.display = "none"
-      document.querySelector('#awards-timeline').style.display = "none"
-      document.querySelector('#education-timeline').style.display = "block"
-      $("#education-timeline").animate({
-        opacity: 1
-      }, 75, "swing")
-    })
-  }
-
-  function experienceSelector(e) {
-    $(e).animate({
-      borderWidth: "1px"
-    }, 75, "swing", () => {
-      $(".education-container").animate({
-        borderWidth: "0px"
-      }, 75, "swing")
-      $(".awards-container").animate({
-        borderWidth: "0px"
-      }, 75, "swing")
-    })
-
-    $("#awards-timeline").animate({
-      opacity: 0
-    }, 75, "swing")
-    $("#education-timeline").animate({
-      opacity: 0
-    }, 75, "swing", () => {
-      document.querySelector('#education-timeline').style.display = "none"
-      document.querySelector('#awards-timeline').style.display = "none"
-      document.querySelector('#experience-timeline').style.display = "block"
-      $("#experience-timeline").animate({
-        opacity: 1
-      }, 75, "swing")
-    })
-  }
-
-  function awardsSelector(e) {
-    $(e).animate({
-      borderWidth: "1px"
-    }, 75, "swing", () => {
-      $(".education-container").animate({
-        borderWidth: "0px"
-      }, 75, "swing")
-      $(".experience-container").animate({
-        borderWidth: "0px"
-      }, 75, "swing")
-    })
-
-    $("#experience-timeline").animate({
-      opacity: 0
-    }, 75, "swing")
-    $("#education-timeline").animate({
-      opacity: 0
-    }, 75, "swing", () => {
-      document.querySelector('#education-timeline').style.display = "none"
-      document.querySelector('#awards-timeline').style.display = "block"
-      document.querySelector('#experience-timeline').style.display = "none"
-      $("#awards-timeline").animate({
-        opacity: 1
-      }, 75, "swing")
-    })
-  }
-
-</script>
 
 <body>
 
@@ -616,7 +526,7 @@
           <h4>Highest Score on Day 1</h4>
           <p>
             Won the special prize for the highest score on Day 1.
-            SPIRITCYBER-22 is a hackathon organised by NUS in conjuction
+            SPIRITCYBER-22 is a hackathon organised by NTU in conjuction
             with CSA Singapore.
           </p>
         </div>
