@@ -481,7 +481,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.education-container {
+.experience-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,7 +491,7 @@ a:hover {
   margin-top: 10px;
 }
 
-.experience-container,
+.education-container,
 .awards-container {
   display: flex;
   justify-content: center;
