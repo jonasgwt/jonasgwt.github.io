@@ -14,14 +14,13 @@
 
 [![Screen Shot][product-screenshot]](https://jonasgwt.github.io/)
 
-A mobile responsive website built with Jekyll that serves as a portfolio. Visit the site <a href="https://jonasgwt.github.io/">here</a>
+A mobile responsive website that serves as a portfolio. Visit the site <a href="https://jonasgwt.github.io/">here</a>
 
 
 
 
 ### Built With
 
-* [![jeykll][jeykll.com]][jekyll-url]
 * ![html][html.com]
 * ![css][css.com]
 * ![css][javascript]
@@ -49,9 +48,6 @@ A mobile responsive website built with Jekyll that serves as a portfolio. Visit 
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-
-[jeykll.com]: https://img.shields.io/badge/Jekyll-CC0000?style=for-the-badge&logo=Jekyll&logoColor=white
-[jekyll-url]: https://jekyllrb.com/
 
 [html.com]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 
